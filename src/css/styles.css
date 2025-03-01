@@ -16,3 +16,202 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/*==================== TIMER STYLES ====================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 48px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+#datetime-picker,
+[data-start] {
+  display: block;
+  border-radius: 4px;
+  line-height: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+}
+
+#datetime-picker {
+  position: relative;
+  border: 1px solid #808080;
+  width: 280px;
+  padding: 7px 15px;
+  color: inherit;
+  transition: border-color 250ms linear;
+}
+
+#datetime-picker:hover {
+  border: 1px solid #000000;
+}
+
+#datetime-picker:focus {
+  border: 1px solid #4e75ff;
+}
+
+#datetime-picker:disabled {
+  color: #808080;
+  background-color: #fafafa;
+  cursor: default;
+}
+
+[data-start] {
+  padding: 8px 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4e75ff;
+  cursor: pointer;
+}
+
+[data-start]:hover {
+  background-color: #6c8cff;
+}
+
+[data-start]:disabled {
+  color: #989898;
+  background-color: #cfcfcf;
+  cursor: default;
+}
+
+.timer {
+  margin-top: 32px;
+  display: flex;
+  gap: 24px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  display: block;
+  line-height: 1.2;
+  font-size: 40px;
+  letter-spacing: 0.04em;
+}
+
+.label {
+  display: block;
+}
+/*==================== /TIMER STYLES ====================*/
+
+/*==================== SNACKBAR STYLES ====================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 48px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+button {
+  all: unset;
+}
+
+form {
+  width: 360px;
+}
+
+form input,
+form label,
+form legend,
+form button {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  color: #2e2f42;
+  cursor: pointer;
+}
+
+.delay-label {
+  display: block;
+  width: 100%;
+  letter-spacing: 0.04em;
+}
+
+form input[name='delay'] {
+  display: block;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 100%;
+  padding: 8px 16px;
+  letter-spacing: 0.04em;
+  transition: border-color 200ms linear;
+}
+
+form input[name='delay']:hover {
+  border-color: #000000;
+}
+
+form input[name='delay']:focus {
+  border-color: #4e75ff;
+  outline: none;
+}
+
+form fieldset {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 0 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 15px 44px 2px 50px;
+}
+
+form legend {
+  letter-spacing: 0.04em;
+}
+
+.radio-label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px;
+}
+
+form input[name='state'] {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+form button {
+  margin-top: 24px;
+  border-radius: 8px;
+  width: 100%;
+  padding-block: 8px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4e75ff;
+  transition: background-color 200ms linear;
+}
+
+form button:hover {
+  background-color: #6c8cff;
+}
+
+/*==================== /SNACKBAR STYLES ====================*/
