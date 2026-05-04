@@ -7,6 +7,7 @@ import pathErrorIcon from '../img/icon-error.svg';
 
 const dateInput = document.getElementById('datetime-picker');
 const startBtn = document.querySelector('[data-start]');
+startBtn.disabled = true;
 const timeElements = {
   daysEl: document.querySelector('[data-days]'),
   hoursEl: document.querySelector('[data-hours]'),
@@ -26,7 +27,7 @@ const options = {
       return;
     }
     userSelectedDate = selectedDates[0];
-    if (userSelectedDate < new Date()) {
+    if (userSelectedDate <= new Date()) {
       showMessage();
       startBtn.disabled = true;
     } else {
